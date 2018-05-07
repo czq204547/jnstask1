@@ -1,2 +1,2 @@
 # jnstask1
-task1JDBCTemplate
+task1
