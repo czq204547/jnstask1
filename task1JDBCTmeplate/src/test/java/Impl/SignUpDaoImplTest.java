@@ -34,33 +34,33 @@ public class SignUpDaoImplTest {
 
     @Test
     public void delete() throws Exception {
-        int id = 10032;
+        int id = 10006;
         assertTrue(signUpDao.delete(id));
     }
 
     @Test
     public void update() throws Exception {
         SignUp signUp = new SignUp("john","123","java",new Date(),"ab school",123131,"wwww.abc.com","I hope","jack","zhihu");
-        signUp.setId(10030);
+        signUp.setId(10005);
         signUp.setName("update by JDBCTemplate");
         assertTrue(signUpDao.update(signUp));
     }
 
     @Test
     public void selectById() throws Exception {
-        int id = 10024;
+        int id = 10001;
         assertNotNull(signUpDao.selectById(id));
     }
 
     @Test
     public void selectByName() throws Exception {
-        String name = "刘仁瑞";
+        String name = "jack";
         assertNotNull(signUpDao.selectByName(name));
     }
 
     @Test
     public void selectByQq() throws Exception {
-        String qq = "936997223";
+        String qq = "12345678";
         assertNotNull(signUpDao.selectByQq(qq));
     }
 
