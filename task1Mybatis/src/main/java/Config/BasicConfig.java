@@ -19,8 +19,8 @@ public class BasicConfig {
         BasicDataSource dataSource = new BasicDataSource();
         dataSource.setDriverClassName("com.mysql.jdbc.Driver");
         dataSource.setUrl("jdbc:mysql://localhost:3306/jt1?useUnicode=true&characterEncoding=utf-8");
-        dataSource.setUsername("root");
-        dataSource.setPassword("Mysql123,");
+        dataSource.setUsername("user3");
+        dataSource.setPassword("Password3,");
         dataSource.setInitialSize(5);
         return dataSource;
     }
